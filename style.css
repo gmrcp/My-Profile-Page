@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Zen+Maru+Gothic:wght@300;400;700&display=swap');
+
+body {
+  background-color: #e2e8ec9c;
+}
+
+p {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+}
+
+.img-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform .3s, box-shadow .2s;
+}
+
+.img-avatar:hover {
+  transform: scale(1.15) translate(-10%, -8px);
+  box-shadow: 3px 3px 0px #f27c54;
+}
+
+.btn-grey {
+  color: #fefefe;
+  background-color: #263d42;
+  border-radius: 3px;
+  padding: 10px 8px;
+  margin-bottom: 10px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 700;
+  transition: background-color 0.1s;
+}
+
+.btn-grey:hover {
+  color: #263d42;
+  background-color: #f27c54;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f27c54;
+}
+
+li > a {
+  color: #263d42;
+  font-size: 20px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.container {
+  width: 100%;
+}
+
+.card {
+  background-color: #fefefe;
+  width: 500px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px 50px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px #263d4252;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .card {
+    width: 500px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .card {
+    width: 400px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .card {
+    width: 300px;
+  }
+}
